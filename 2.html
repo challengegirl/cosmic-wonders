@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كواكب المجرة الشمسية</title>
+    <link rel="stylesheet" href="2.css">
+</head>
+<body>
+
+    <header>
+        <h1>رحلة عبر الكواكب التسعة</h1>
+        <p>استكشف أسرار الكواكب بلمسة واحدة</p>
+    </header>
+
+    <main class="gallery-container">
+        <div class="planet-card" onclick="openModal();currentSlide(1)">
+            <img src="image/mercury.jpg" alt="عطارد">
+            <div class="planet-info"><h3>عطارد</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(2)">
+            <img src="image/venus.jpg" alt="الزهرة">
+            <div class="planet-info"><h3>الزهرة</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(3)">
+            <img src="image/Earth1.jpg" alt="الأرض">
+            <div class="planet-info"><h3>الأرض</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(4)">
+            <img src="image/mars.jpg" alt="المريخ">
+            <div class="planet-info"><h3>المريخ</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(5)">
+            <img src="image/jupiter.jpg" alt="المشتري">
+            <div class="planet-info"><h3>المشتري</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(6)">
+            <img src="image/saturn.jpg" alt="زحل">
+            <div class="planet-info"><h3>زحل</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(7)">
+            <img src="image/u.jpg" alt="أورانوس">
+            <div class="planet-info"><h3>أورانوس</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(8)">
+            <img src="image/neptune.jpg" alt="نبتون">
+            <div class="planet-info"><h3>نبتون</h3></div>
+        </div>
+        <div class="planet-card" onclick="openModal();currentSlide(9)">
+            <img src="image/pluto.jpg" alt="بلوتو">
+            <div class="planet-info"><h3>بلوتو</h3></div>
+        </div>
+    </main>
+
+    <div id="myModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+            <div class="mySlides"> <img src="image/mercury.jpg"> <div class="caption"><h2>عطارد</h2><p> أصغر كواكب المجموعة الشمسية وأقربها إلى الشمس، لا يملك غلافاً جوياً يحميه، لذا فسطحه مليء بالفوهات ويشبه القمر تماماً.</p></div> </div>
+            <div class="mySlides"> <img src="image/venus.jpg"> <div class="caption"><h2>الزهرة</h2><p>يُعرف بتوأم الأرض لتقارب حجمهما، لكنه جحيم حقيقي؛ فهو أكثر الكواكب حرارة بسبب ظاهرة الاحتباس الحراري الشديدة في غلافه الكثيف.</p></div> </div>
+            <div class="mySlides"> <img src="image/Earth1.jpg"> <div class="caption"><h2>الأرض</h2><p>  موطننا الأزرق الفريد، الكوكب الوحيد المعروف الذي تتوفر فيه المياه السائلة والأكسجين، مما يجعله واحة للحياة في هذا الكون الواسع.</p></div> </div>
+            <div class="mySlides"> <img src="image/mars.jpg"> <div class="caption"><h2>المريخ</h2><p> " الكوكب الأحمر" الذي لفت أنظار البشر لقرون؛ سطحه يحتوي على أكبر بركان في المجموعة الشمسية (أوليمبوس)، ويعتقد العلماء أنه كان يضم مياهاً يوماً ما . </p></div> </div>
+            <div class="mySlides"> <img src="image/jupiter.jpg"> <div class="caption"><h2>المشتري</h2><p> سيد الكواكب وعملاق الغاز، حجمه يتسع لـ 1300 كوكب مثل الأرض، ويتميز بـ "البقعة الحمراء العظيمة" وهي عاصفة ضخمة مستمرة منذ مئات السنين.</p></div> </div>
+            <div class="mySlides"> <img src="image/saturn.jpg"> <div class="caption"><h2>زحل</h2><p>أيقونة الجمال الفلكي بفضل حلقاته البديعة المكونة من قطع الثلج والغبار، وهو كوكب قليل الكثافة جداً لدرجة أنه يمكنه الطفو فوق الماء! .</p></div> </div>
+            <div class="mySlides"> <img src="image/u.jpg"> <div class="caption"><h2>أورانوس</h2><p>  العملاق الجليدي البارد الذي يتميز بلونه السماوي وميله الجانبي الفريد؛ فهو الكوكب الوحيد الذي يدور "على جنبه" بدلاً من الدوران الرأسي.</p></div> </div>
+            <div class="mySlides"> <img src="image/neptune.jpg"> <div class="caption"><h2>نبتون</h2><p>  الكوكب الأزرق العميق والأكثر بعداً، تسكنه أقوى الرياح في المجموعة الشمسية، ويستغرق 165 سنة أرضية ليتم دورة واحدة حول الشمس..</p></div> </div>
+            <div class="mySlides"> <img src="image/pluto.jpg"> <div class="caption"><h2>بلوتو</h2><p>  الكوكب القزم الذي يقع في حافة المجموعة (حزام كايبر)، يتميز بقلب جليدي على سطحه وأجواء متجمدة غامضة.</p></div> </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+
+    <script>
+        function openModal() { document.getElementById("myModal").style.display = "flex"; }
+        function closeModal() { document.getElementById("myModal").style.display = "none"; }
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) { showSlides(slideIndex += n); }
+        function currentSlide(n) { showSlides(slideIndex = n); }
+        function showSlides(n) {
+            var i; var slides = document.getElementsByClassName("mySlides");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) { slides[i].style.display = "none"; }
+            slides[slideIndex-1].style.display = "block";
+        }
+    </script>
+
+<br>
+    <div style="text-align: center; margin-bottom: 50px;">
+       <a href="3.html" class="btn-explore"> اكتشف اكثر </a>            <a href="html.html" class="btn-explore">العودة للرئيسية</a>
+    </div>
+     <footer>
+        <p>تم تصميم المشروع بكل حب لجمال الكون &copy; 2026</p>
+        <br>
+        <p>بواسطة challenge girl </p>
+    </footer>
+</body>
+</html>

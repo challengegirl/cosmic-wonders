@@ -1,0 +1,96 @@
+/* تنسيقات عامة */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0b0d17; /* لون فضائي غامق */
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+/* الهيدر (العنوان العلوي) */
+header {
+    text-align: center;
+    padding: 50px 20px;
+    background: linear-gradient(to bottom, #1a1e2e, #0b0d17);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #6f2373; /* لون ذهبي */
+    margin-bottom: 10px;
+}
+
+/* حاوية البطاقات */
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+/* تنسيق البطاقة الواحدة */
+.card {
+    background-color: #161b22;
+    width: 300px;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #30363d;
+}
+
+/* تأثير عند تمرير الفأرة على البطاقة */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 25px rgba(173, 49, 205, 0.2);
+}
+
+/* تنسيق الصورة داخل البطاقة */
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 2px solid #631451;
+}
+
+/* محتوى البطاقة (النصوص) */
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #631451;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+.card-content p {
+    font-size: 0.95rem;
+    color: #c9d1d9;
+}
+
+/* الفوتر */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #8b949e;
+    font-size: 0.8rem;
+}
+
+.btn-explore {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #621974;
+    color: #05070a;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px rgba(48, 58, 128, 0.3);
+}
+
+.btn-explore:hover {
+    background-color: #ffffff;
+    transform: scale(1.1);
+}
